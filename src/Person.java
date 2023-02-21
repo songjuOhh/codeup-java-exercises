@@ -18,6 +18,17 @@ public class Person {
     }
 
 
+    public static Person[] addPersonAtFront(Person[] people, Person person) {
+        Person[] newPeopleArray = Arrays.copyOf(people, people.length + 1);
+        for (int i = newPeopleArray.length - 1; i > 0; i -= 1) {
+            Person personToMove = newPeopleArray[i - 1];
+            newPeopleArray[i] = personToMove;
+        }
+        newPeopleArray[0] = person;
+        return newPeopleArray;
+    }
+
+
     public static void makePeopleOlder (Person[] people){
         for (Person person : people){
             person.setAge(person.getAge()+1);

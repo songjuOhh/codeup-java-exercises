@@ -6,7 +6,7 @@ import java.util.Hashtable;
 import java.util.Scanner;
 
 
-public class GamePrac extends Thread{
+public class GameMain extends Thread{
     public static void main(String args[]){
 
         Hashtable <String, String> Ending = new Hashtable<String, String>(); // Hashtable 실험
@@ -51,7 +51,19 @@ public class GamePrac extends Thread{
         System.out.println("[계속 하려면 아무 키나 누르세요.]");
         next = sc.nextLine();
 user.space();
-        System.out.println(" ");
+        System.out.println
+
+
+
+
+
+
+
+
+
+
+
+                (" ");
         System.out.println("(당신은 낯선곳에서 눈을 뜹니다.)");
         next = sc.nextLine();
 user.space();

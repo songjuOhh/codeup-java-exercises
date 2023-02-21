@@ -129,9 +129,11 @@ public class Movie {
                 System.out.println("\nDo you want to continue? y / n");
                 String userInput = sc.nextLine();
                 if (userInput.equalsIgnoreCase("y")) {
-                    break;
+                    wantContinue =true;
+
                 }else{
-                    wantContinue = true;
+                    wantContinue =false;
+                    break;
                 }
 
             } else if (userAnswer == 2) {
