@@ -21,11 +21,11 @@ public class Rectangle extends Quadrilateral implements Measurable{
         return parameter;
     }
 
-    void setLength(int input) {
+    public void setLength(int input) {
         length = input;
     }
 
-    void setWidth(int input) {
+    public void setWidth(int input) {
         width = input;
     }
 

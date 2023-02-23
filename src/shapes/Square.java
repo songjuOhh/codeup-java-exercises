@@ -8,22 +8,23 @@ public class Square extends Quadrilateral {
 
     @Override
     public double getArea() {
-        double area = length*length;
-        return area;
+        return length*length;
     }
 
     @Override
     public double getPerimeter() {
-        double parameter = 4 * length;
-        return parameter;
+        return 4 * length;
+
     }
 
-    void setLength(int input) {
+    public void setLength(int input) {
         length = input;
+        setWidth(input);
     }
 
-    void setWidth(int input) {
+    public void setWidth(int input) {
        width = input;
+       setLength(input);
     }
 
 
@@ -44,6 +45,4 @@ public class Square extends Quadrilateral {
 //    public static void main(String[] args) {
 //
 //    }
-
-
 }
