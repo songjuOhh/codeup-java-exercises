@@ -27,9 +27,9 @@ public class ExceptionsStudyTest {
 //        }
 //        System.out.println("Check me out!");
 
+        ExceptionsStudy study = new ExceptionsStudy();
 
         try {
-            ExceptionsStudy study = new ExceptionsStudy();
 //            System.out.println(Integer.parseInt(study.notAnInt));
             System.out.println(study.sayHello.length());
             System.out.print("The extracted substring is : ");
@@ -37,10 +37,12 @@ public class ExceptionsStudyTest {
 
         } catch (Exception e){
             System.out.println("\nGot an exception: "+e.getMessage());
-            e.printStackTrace();
+//            e.printStackTrace();   //This will still print red error message
         }
         System.out.println("Check me out!");
 
+
+        study.askForAnInteger();
 
 
     }

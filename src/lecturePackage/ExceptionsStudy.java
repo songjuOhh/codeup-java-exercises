@@ -1,9 +1,29 @@
 package lecturePackage;
 
+import java.util.Scanner;
+
 public class ExceptionsStudy {
 
     String mightBeAnInt = "10000";
     String sayHello = "Hello my name is Songju";
+
+    public void askForAnInteger(){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Please enter an integer: ");
+        String userInput = sc.nextLine();
+        try{
+            int userInputInteger = Integer.parseInt(userInput);
+            System.out.printf("Your input number is: %s\n",userInputInteger);
+        }catch (NumberFormatException e){
+            System.out.println("Uh oh, " + e.getMessage() + " is not an integer...");
+//        }catch (IndexOutOfBoundsException) {
+//            System.out.println("hmm.. well it is just wrong...");
+        }catch (Exception e){
+            System.out.println("hmm.. well it is just wrong...");
+        }finally {
+
+        }
+    }
 
     /*
     * Mini-exercise:

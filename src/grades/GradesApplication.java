@@ -78,12 +78,10 @@ public class GradesApplication {
                         System.out.printf("Name: %s - GitHub Username: %s\nCurrent Average: %s\n" , students.get(key).getName(), key, students.get(key).getGradeAverage() );
 //                        System.out.printf("Current Average: %s\n" , students.get(key).getGrades() );
                         System.out.printf("Current Average: %s\n" , students.get(key).getGradeAverage() );
-
-
-
                     }
                 }
             }
+
             System.out.println("Would you like to see another student? y / n\n");
             String anotherUser = sc.nextLine();
             if(anotherUser.equalsIgnoreCase("y")){

@@ -1,8 +1,28 @@
+import java.util.Scanner;
+import java.util.Arrays;
+
+
 public class Main {
     public static void main(String[] args) {
-        int number = 0;
+//        int[][] primes = new int[3][3];
+//        primes[2][2] = 1;
+//
+//        System.out.println(primes[1][2]);
 
-        System.out.println(number);
-        System.out.println("Hello world!");
+
+        String[] names = {"Rick", "Stacey", "Brad", "Becca"};
+        String x;
+
+
+        try {
+            x = names[100];
+        } catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println("Exception caught!");
+            x = "";
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            System.out.println("This will always run.");
+        }
     }
 }
