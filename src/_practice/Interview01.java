@@ -1,5 +1,7 @@
 package _practice;
 
+import lecturePackage.ArraysLecture;
+
 import java.util.Arrays;
 
 public class Interview01 {
@@ -101,14 +103,14 @@ Constraints:
 0 <= nums[i] <= 50
 0 <= val <= 100
 */
-    public int removeElement(int[] nums, int val) {
+    public static int removeElement(int[] nums, int val) {
 
         int count = 0;
         int[] newArray = new int[nums.length];
         for(int i=0; i<nums.length; i++){
             System.out.println(i);
             if(nums[i] == val){
-                newArray[i] = ' ';
+                newArray[i] = '_';
                 count++;
             }else{
                 newArray[i] = nums[i];
@@ -116,6 +118,14 @@ Constraints:
             nums = newArray;
         }
         return count;
+    }
+
+    public static void main(String[] args) {
+        int[] nums = {3,2,3,4,5};
+        System.out.println(nums);
+        int result = removeElement(nums,3);
+        System.out.println("[removeElement]: "+ result);
+        System.out.println("[nums]: "+nums);
     }
 
 
